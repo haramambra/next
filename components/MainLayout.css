@@ -1,0 +1,49 @@
+html,
+body > div,
+.wrap {
+	height: 100%;
+}
+
+body {
+	background: url(/static/pat.png),
+		linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(45, 65, 154, 1) 0%, rgba(72, 195, 210, 1) 100%);
+	font-family: "Roboto", sans-serif;
+	font-size: var(--font-s);
+	color: var(--main-color);
+	position: relative;
+}
+
+.wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.mainContainer {
+	flex: 1 0 auto;
+	display: flex;
+	margin: var(--size-xl) 0;
+}
+
+.content {
+	margin-right: var(--size-l);
+	width: 100%;
+}
+
+@media (--bigscreen) {
+	.content {
+		margin-right: 195px;
+	}
+}
+
+@media (--mobile) {
+	.content {
+		margin: 0;
+		padding-top: 90px;
+	}
+
+	.mainContainer {
+		display: block;
+		padding: 0 var(--size-l);
+		margin-top: 0;
+	}
+}

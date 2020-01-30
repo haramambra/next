@@ -1,0 +1,10 @@
+@import "./variables.css";
+
+.wrap {
+	background: var(--block-gradient);
+}
+
+h1 {
+	padding: 20px;
+	background: #c8c8c8;
+}

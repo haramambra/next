@@ -1,0 +1,13 @@
+@custom-media --mobile screen and (max-width: 768px);
+@custom-media --notebook screen and (min-width: 1024px);
+@custom-media --desktop screen and (min-width: 1280px);
+@custom-media --bigscreen screen and (min-width: 1920px);
+
+:root {
+	--block-gradient: linear-gradient(
+		180deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(229, 239, 245, 1) 100%
+	);
+}
