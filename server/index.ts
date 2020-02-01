@@ -5,7 +5,6 @@ import cookiesMiddleware from 'universal-cookie-express';
 import routes from './routes';
 import skipDebugStaticMiddleware from './skipDebugStaticMiddleware';
 
-console.log(process.env.NODE_ENV);
 require('dotenv').config({path: process.cwd() +'/.env'});
 const enviroment = process.env.NODE_ENV || 'development';
 const port = process.env.PORT;
