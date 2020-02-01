@@ -5,11 +5,11 @@ import cookiesMiddleware from 'universal-cookie-express';
 import routes from './routes';
 import skipDebugStaticMiddleware from './skipDebugStaticMiddleware';
 
+console.log(process.env.NODE_ENV);
 require('dotenv').config({path: process.cwd() +'/.env'});
-
-const enviroment = process.env.NODE_ENV || 'production';
+const enviroment = process.env.NODE_ENV || 'development';
 const port = process.env.PORT;
-const dev = enviroment !== 'production';
+const dev = enviroment === 'development';
 const nextApp = next({dev, quiet: !dev});
 const nextHandler = nextApp.getRequestHandler();
 
