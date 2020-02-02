@@ -1,7 +1,8 @@
 import {parse} from 'url';
 import express from 'express';
+require('dotenv').config({path: process.cwd() +'/.env'});
 
-const STATIC_PATH = ['/_next/', '/static/'];
+const STATIC_PATH = ['/_next/', `/${process.env.STATIC_FOLDER}/`];
 
 const skipDebugStaticMiddleware = (nextHandler: any): express.Handler => (req, res, next) => {
 	if (STATIC_PATH.some(x => req.url.startsWith(x))) {
