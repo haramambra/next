@@ -8,4 +8,4 @@ COPY .next/ ./.next
 
 RUN npm install --only=production
 
-CMD ["node", "run", "build"]
+CMD ["node", "run", "prod"]
