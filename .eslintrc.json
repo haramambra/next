@@ -34,18 +34,5 @@
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/no-object-literal-type-assertion": "off",
     "@typescript-eslint/prefer-interface": "off"
-  },
-  "globals": {
-    "siteSettings": "readonly",
-    "ga": "readonly",
-    "page": "readonly",
-    "jestPuppeteer": "readonly",
-    "sat": "readonly"
-  },
-  "env": {
-    "jest": true,
-    "es6": true,
-    "browser": true,
-    "node": true
   }
 }

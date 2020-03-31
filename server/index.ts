@@ -3,8 +3,6 @@ import express from 'express';
 import proxy from 'express-http-proxy';
 import cookiesMiddleware from 'universal-cookie-express';
 import routes from './routes';
-import skipDebugStaticMiddleware from './skipDebugStaticMiddleware';
-
 require('dotenv').config({path: process.cwd() +'/.env'});
 const enviroment = process.env.NODE_ENV || 'development';
 const port = process.env.PORT;
@@ -36,7 +34,7 @@ nextApp.prepare().then(() => {
 
 	app.use('/graphql', proxy(gqlServer, proxySettings));
 
-	app.use(skipDebugStaticMiddleware(nextHandler));
+	app.use(nextHandler);
 
 	app.use(cookiesMiddleware());
 

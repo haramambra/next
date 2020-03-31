@@ -1,0 +1,14 @@
+.wrap {
+	background: var(--block-gradient);
+}
+
+.mainTitle {
+	padding: 20px;
+	background: #c8c8c8;
+}
+
+.backgroundImage {
+	width: 75px;
+	height: 24px;
+	background: url("../public/visa.png");
+}

@@ -1,0 +1,4 @@
+.wrap {
+    background: var(--block-gradient);
+    padding: 20px;
+}

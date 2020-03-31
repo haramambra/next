@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY package.json ./
 COPY package-lock.json ./
-COPY public/ ./static
+COPY public/ ./public
 COPY .next/ ./.next
 
 RUN npm install --only=production

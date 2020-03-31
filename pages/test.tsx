@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLayout from '../components/MainLayout';
-import css from '../components/index-page.css';
+import css from '../components/testPage.module.css';
 
 const TestPage: React.FC = () => {
 

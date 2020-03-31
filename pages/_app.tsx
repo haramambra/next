@@ -5,6 +5,8 @@ import compose from 'lodash.flowright';
 import withApolloClient from '../components/app/withApolloClient';
 import withCookiesProvider from '../components/app/withCookiesProvider';
 import withSsrContextProvider from '../components/app/withSsrContextProvider';
+import '../components/reset.css';
+import '../components/variables.css';
 
 type State = {
 	runtimeError?: Error;

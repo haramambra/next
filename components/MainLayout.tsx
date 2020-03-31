@@ -6,7 +6,6 @@ const MainLayout: React.FC = ({children}) => {
 		<>
 			<Head>
 				<title>Next with graphql</title>
-				<link rel="stylesheet" href="/static/reset.css" />
 			</Head>
 
 			<div>{children}</div>
