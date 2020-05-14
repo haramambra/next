@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_ENV=development node ./server/watch-server.js",
     "prod": "npm run build && cross-env NODE_ENV=production  npm start",
     "build": "node ./node_modules/next/dist/bin/next build && tsc --project tsconfig.server.json",
-    "start": "node -r  ./production-server/server/index.js",
+    "start": "cross-env NODE_ENV=production node -r  ./production-server/server/index.js",
     "graphql-codegen": "gql-gen --config graphql-codegen.yml",
     "pretify": "prettier --write **/*.{js,ts,jsx,tsx,css}"
   },

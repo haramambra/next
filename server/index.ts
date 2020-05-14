@@ -4,9 +4,8 @@ import proxy from 'express-http-proxy';
 import cookiesMiddleware from 'universal-cookie-express';
 import routes from './routes';
 require('dotenv').config({path: process.cwd() +'/.env'});
-const enviroment = process.env.NODE_ENV || 'development';
 const port = process.env.PORT;
-const dev = enviroment === 'development';
+const dev = process.env.NODE_ENV === 'development';
 const nextApp = next({dev, quiet: !dev});
 const nextHandler = nextApp.getRequestHandler();
 
